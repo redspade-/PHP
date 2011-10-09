@@ -11,14 +11,33 @@
 	 **/
 	abstract class Jellyfish_Base {
 		
+		/**
+		 *	getClass
+		 *
+		 *	@return	String	Returns the resolved class of the object being referenced.
+		 **/
 		public function getClass() {
 			return get_class( $this );
 		}
 		
+		/**
+		 *	getClassName
+		 *
+		 *	@alias	getClass
+		 *	@return	String	Returns the resolved class of the object being referenced.
+		 *	@see	getClass
+		 **/		 
 		public function getClassName() {
 			return $this->getClass();
 		}
 		
+		/**
+		 *	__toString
+		 *
+		 *	@alias	getClass
+		 *	@return	String	Returns the resolved class of the object being referenced.
+		 *	@see	getClass
+		 **/
 		public function __toString() {
 			return $this->getClass();
 		}
